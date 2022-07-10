@@ -1,4 +1,5 @@
-// 문자열 하단은 js 기준
+// 문자열 
+// 하단은 js 기준
 const str: string = 'hello';
 //const str = 'hello';
 

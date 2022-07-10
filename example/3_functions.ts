@@ -2,6 +2,8 @@
 function sum(a, b) {
   return a + b;
 }
+sum(1,3)
+//vscode에서 볼수 있듯이 암묵적으로는 선언 안하면 any로 되고 선언을 하게해줄수있음
 
 // 타입스크립트 함수 선언 - 함수의 매개 변수
 function add(a: number, b: number) {
