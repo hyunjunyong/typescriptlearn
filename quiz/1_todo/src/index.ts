@@ -53,3 +53,5 @@ function log() {
 todoItems = fetchTodoItems();
 addTwoTodoItems();
 log();
+
+//git ignore test
