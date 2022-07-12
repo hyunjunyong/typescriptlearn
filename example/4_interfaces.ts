@@ -30,6 +30,22 @@ getUser(seho);
 // arr[0] = 'hi';
 // arr[1] = 10;
 
+interface StringRegexDictionary{
+  [key: string]: RegExp
+}
+
+var obj ={
+  // sth: /abc/,
+  cssFile: /\.css$/,
+  jsFIle:/\.js$/,
+}
+
+obj['cssFile'] = 'a'
+
+Object.keys(obj).forEach(function(value)){
+  
+}
+
 // 인터페이스 확장
 interface Person {
   name: string;
@@ -39,3 +55,4 @@ interface Developer extends Person {
   language: string;
 }
 const joo: Developer = { name: 'joo', age: 20, language: 'ts' };
+
