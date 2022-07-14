@@ -42,6 +42,16 @@ interface Person {
 }
 
 function askSomeone(someone: Developer | Person) {
-  someone.name; // O
-  someone.age; // X
+  // someone.name; // O
+  // someone.age; // X
 }
+
+// function askSomeone(someone: Developer & Person) {
+//   someone.name; // O
+//   someone.age; // O
+// }
+
+//인터셉션은 and 둘다 호출하는거임, union이 더 자주쓰임
+
+askSomeone({name: '디벨로퍼',skill: '웹 개발'});
+askSomeone({name: '캡틴',age:100});
