@@ -1,4 +1,34 @@
 // 이넘(Enum)
+// enum Shoes{//숫자형 이넘
+//   Nike, //Shoes.Nike =0 Shoes.Adidas = 1, Shoes.Sth = 2; 초기화를 하지 않을 시에 예시
+//   Adidas,
+//   Sth,
+// }
+
+enum Shoes{//문자형 이넘
+  Nike='나이키', 
+  Adidas='아디다시',
+}
+
+var myShoes = Shoes.Nike;
+console.log(myShoes);
+
+enum Answer{
+  Yes= 'Y',
+  NO = 'N',
+}
+
+function askQuestion(answer: Answer){
+  if(answer === Answer.Yes){
+    console.log('정답입니다.')
+  }
+  if(answer === Answer.NO){
+    console.log('오답입니다.')
+  }
+}
+askQuestion('예스');
+
+
 enum Avengers {
   Capt,
   Ironman,
