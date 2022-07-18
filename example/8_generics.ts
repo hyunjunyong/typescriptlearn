@@ -7,6 +7,8 @@ function getArray(value: string[]) {
 }
 
 // 제네릭 기본 문법 - 함수
+// 꼭 T 일필요는없음 변수명 중에 하나임
+
 function getValue<T>(value: T): T {
   return value;
 }
