@@ -53,3 +53,10 @@ function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
 getAllowedOptions('nothing');
 // const a = getAllowedOptions('name');
 // a.toUpperCase(); // Name
+
+//기본적으로 제네릭 선언 방법
+interface Dropdown<T>{
+  value: T;
+  selected: boolean;
+}
+const obj: Dropdown<string> = {value: 'abc', selected: false};
