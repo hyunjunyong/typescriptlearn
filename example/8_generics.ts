@@ -33,6 +33,19 @@ function getNumberAndArray<T>(value: T[]): T[] {
   return value;
 }
 
+//제네릭 타입 제한 2 - 정의된 타입 이용하기
+
+interface LengthType{
+  length: number;
+}
+
+function logTextLength<T extends LengthType>(text: T): T{
+  text.length;
+  return text;
+}
+
+logTextLength('a');
+
 // 제네릭 타입 제한 - keyof
 interface ShoppingItems {
   name: string;
