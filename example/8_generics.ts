@@ -53,6 +53,8 @@ interface ShoppingItems {
   address: string;
   stock: number;
 }
+
+//extends interface를 통해 shoppingitem중 하나 타입만 선언가능
 function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
   if (option === 'name' || option === 'address') {
     console.log('option type is string');
@@ -63,7 +65,10 @@ function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
     return option;
   }
 }
-getAllowedOptions('nothing');
+
+getAllowedOptions('address');
+
+// getAllowedOptions('nothing');
 // const a = getAllowedOptions('name');
 // a.toUpperCase(); // Name
 
@@ -73,3 +78,4 @@ interface Dropdown<T>{
   selected: boolean;
 }
 const obj: Dropdown<string> = {value: 'abc', selected: false};
+
