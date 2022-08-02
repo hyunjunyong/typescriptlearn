@@ -3,3 +3,8 @@ https://www.inflearn.com/course/%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C-%E
 캡틴판교 웹팩 강의
 
 너무 깃헙이 난잡해질거 같아서 강의를 타입스크립트 안에 넣음
+
+npm -v
+npm init
+npm init -y
+npm install jquery
