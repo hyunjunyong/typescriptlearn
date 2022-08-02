@@ -8,3 +8,13 @@ npm -v
 npm init
 npm init -y
 npm install jquery
+npm install gulp
+npm uninstall gulp
+npm install gulp --global
+
+<!-- --global 대신 -g 사용 가능 -->
+<!-- npm 지역 설치와 전역설치를 잘 알 것!
+지역설치는 노드모듈스에 들어가고 전역설치는 내컴퓨터에 들어감;;
+\-->
+
+npm 사용 이유 및 장점 : 직접 찾아서 스크립트 태그에 다는 것보다 효율적임
