@@ -25,3 +25,7 @@ devDependencies 개발용
 dependencies 배포용
 
 npm 사용 이유 및 장점 : 직접 찾아서 스크립트 태그에 다는 것보다 효율적임
+
+ㅜpm init -y
+npm i webpack webpack-cli -D
+npm i lodash
