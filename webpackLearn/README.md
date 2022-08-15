@@ -31,3 +31,9 @@ npm i webpack webpack-cli -D
 npm i lodash
 
 2022 08 011 .. 웹팩 튜토리얼 마무리
+
+npm i gulp
+
+<!-- web 자동화도구 -->
+
+<!-- webpack history -->
