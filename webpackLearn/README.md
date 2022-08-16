@@ -37,3 +37,5 @@ npm i gulp
 <!-- web 자동화도구 -->
 
 <!-- webpack history -->
+
+<!-- es6 webpack code spliting -->
