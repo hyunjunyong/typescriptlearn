@@ -2,7 +2,11 @@
   <div id="app">
     <h1>vue todo with typescript</h1>
     <div>
-      <todoInput :item="todoText" @input="updateTodoText()" />
+      <todoInput
+        :item="todoText"
+        @input="updateTodoText()"
+        @add="addTodoItem()"
+      />
     </div>
     <router-view />
   </div>
@@ -22,6 +26,14 @@ export default {
   methods: {
     updateTodoText(value: any) {
       this.todoText = value;
+    },
+    addTodoItem() {
+      const value = this.todoText;
+      localStorage.setItem(value, value);
+      this.initTodoText();
+    },
+    initTodoText() {
+      this.todoText = '';
     },
   },
 };
